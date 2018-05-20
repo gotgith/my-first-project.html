@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Game of Throne</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_670459_f8tlnfn4dj3v7vi.css">
+    <style >
+    /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        /*common css*/
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        body {
+            font: 16px/1.5 Arial;
+            background-color: #fff;
+            color: #444;
+        }
+        .layout {
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*work*/
+        html,body {
+            height: 100%;
+        }
+        header {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            min-height: 600px;
+            background: #000 url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526531752517&di=f9e2f50703c09583994bd7413b5ecf1b&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170718%2Fe83c9625c8af447781d63be64249d219_th.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        header::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;   /*，header里面设置了宽高，可以用width: 100%; height: 100%; 来代替 ,*/
+            top: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        header .logo {
+            color: #f7ba3e;
+            font-size: 32px;
+            float: left;
+            margin-top: 10px;
+        }
+        header .nav {
+            float: right;
+        }
+        header .nav>li {
+            float: left;
+            margin: 10px;
+        }
+        header .nav a {
+            display: block;
+            padding: 5px;
+            font-size: 18px;
+            border-radius: 4px;
+            color: #fff;
+        }
+        header .nav a:hover {
+            background: #f7ba3e;
+        }
+        header .intro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            font-size: 18px;
+            color: #fff;
+            background: #f7ba3e;
+            padding: 5px 10px;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+        .button:hover {
+            opacity: 1;
+        }
+        header .intro h1 {
+            font-size: 32px;
+        }
+        header .intro h2 {
+            font-size: 46px;
+            margin-top: 20px;
+        }
+        header .intro .button {
+            margin-top: 20px;
+        }
+        section {
+            margin-top: 30px;
+            text-align: center;
+        }
+        section > h2 {
+            font-size: 40px;
+        }
+        section > p {
+            margin-top: 10px;
+        }
+        section > ul .iconfont {
+            font-size: 60px;
+        }
+        section .family-intro > li {
+            float: left;
+            width: 33.33%;
+            padding: 10px 20px;
+        }
+        section > ul p {
+            margin-top: 10px;
+        }
+
+        section .family figure {
+            width: calc(33.33% - 20px);
+            height: 320px;
+            margin: 10px;
+            float: left;
+        }
+        section .family a {
+            display: block;
+            height: 240px;
+        }
+        section  img {
+            width: 100%;
+            height: 100%;
+        }
+        section .family figcaption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        section .family p {
+            color: #666;
+            margin-top: 10px;
+        }
+        section .timeline img {
+            width: 200px;
+            height: 200px;
+            border:5px solid lightblue;
+            border-radius: 50%;
+        }
+        section .timeline{
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar clearfix layout">
+            <a class="logo" href="#">Game of Throne</a>
+            <ul class="nav">
+                <li><a href="#">111111</a></li>
+                <li><a href="#">222222</a></li>
+                <li><a href="#">333333</a></li>
+                <li><a href="#">444444</a></li>
+                <li><a href="#">555555</a></li>
+            </ul>
+        </div>
+        <div class="intro layout">
+            <h1>11111111111111</h1>
+            <h2>2222222222222222222</h2>
+            <a href="#" class="button">Tell me more</a>
+        </div>
+    </header>
+    <main class="layout">
+        <section >
+            <h2>1111</h2>
+            <p>222222</p>
+            <ul class="family-intro clearfix">
+                 <li>
+                     <span class="iconfont icon-family1"></span>
+                     <h3>1111111111111111</h3>
+                     <p>222222222222222</p>
+                 </li>
+                 <li>
+                     <span class="iconfont icon-family2"></span>
+                     <h3>111111111111111</h3>
+                     <p>2222222222222</p>
+                 </li>
+                 <li>
+                     <span class="iconfont icon-family3"></span>
+                     <h3>111111111111111</h3>
+                     <p>222222222222222222</p>
+                 </li>
+             </ul>
+        </section>
+        <section>
+            <h2>Family</h2>
+            <p>1111111111111111</p>
+            <div class="family clearfix">
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"></a>
+                    <figcaption>11111111</figcaption>
+                    <p>2222222222222222</p>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>S111111</h2>
+            <p>gushialalalla</p>
+            <ul class="timeline layout">
+                <li class="clearfix">
+                    <img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg" alt="">
+                    <dl class="layout">
+                        <dt>11111111111</dt>
+                        <dd>2222222222222222</dd>
+                    </dl>
+                </li>
+                <li class="clearfix">
+                    <img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg" alt="">
+                    <dl>
+                        <dt>11111111111</dt>
+                        <dd>2222222222222222</dd>
+                    </dl>
+                </li>
+                <li class="clearfix">
+                    <img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg" alt="">
+                    <dl>
+                        <dt>11111111111</dt>
+                        <dd>2222222222222222</dd>
+                    </dl>
+                </li>
+                <li class="clearfix">
+                    <img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg" alt="">
+                    <dl>
+                        <dt>11111111111</dt>
+                        <dd>2222222222222222222</dd>
+                    </dl>
+                </li>
+                <li class="clearfix">
+                    <img src="http://i-7.vcimg.com/trim/a5c06f84236da8c3081a08bef96cc967313940/trim.jpg"alt="">
+                    <dl>
+                        <dt>11111111111</dt>
+                        <dd>2222222222222222</dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
